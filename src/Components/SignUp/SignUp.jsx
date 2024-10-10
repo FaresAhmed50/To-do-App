@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
-export default function TemplateName() {
+export default function SignUp() {
   return (
-    <div>TemplateName</div>
+    <div>SignUp</div>
   )
 }

@@ -24,6 +24,14 @@ export default [
       'react-refresh': reactRefresh,
     },
     rules: {
+      'no-unused-vars': [
+      'warn', // Change 'error' to 'warn' or 'off' as needed
+      { 
+        vars: 'all',
+        args: 'none', // Ignore unused function arguments
+        ignoreRestSiblings: true,
+        varsIgnorePattern: '^_' // Ignore variables starting with an underscore
+      }],
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
